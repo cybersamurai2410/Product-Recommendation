@@ -67,10 +67,8 @@ def recommend_items(user_id, user_item_matrix, item_sim_matrix, top_n=5):
     ranked_items = sorted(scores.items(), key=lambda x: x[1], reverse=True)
     return [item for item, _ in ranked_items[:top_n]]
 
-# Example usage
 if __name__ == "__main__":
-    # Path to your file (replace if needed)
-    data_path = "amazon.csv"
+    data_path = "amazon_sales_dataset.csv"
 
     df = load_and_clean(data_path)
     user_item_matrix = build_user_item_matrix(df)
