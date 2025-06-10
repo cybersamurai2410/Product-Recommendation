@@ -1,4 +1,4 @@
-# Product Recommendation System
+# Product Recommendation System using Clustering and Neural Collaborative Filtering
 A product recommendation system with unsupervised learning built using clustering techniques to group similar products together and recommend them to users based on their preferences.
 
 ## Dataset
